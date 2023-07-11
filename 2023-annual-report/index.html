@@ -96,33 +96,31 @@
             .panel ol li {
             margin-bottom: 5px;
             }
-            .jumbotron-ar-2022 {
-              background-color: #355493;
-              padding-top: 40px;
+            .jumbotron-ar-2023 {
+              background-color: #1F3169;
+              padding-top: 6em;
+              padding-bottom: 6em;
+              background-image: url(./img/ar-2023-hero.png);
+              display: block;
+              background-size: 40%;
+              background-position: 90% 0;
+              background-repeat: no-repeat;
             }
-            .jumbotron-ar-2022-artwork-mobile {
-              display: none;
-            }
-            .jumbotron-ar-2022-artwork-desktop {
-              width: 100%;
-              max-width: 1200px;
-              margin: auto;
+            .flex-hero{
+              display: flex; 
+              align-content: center;
             }
             @media (max-width: 767px) {
-              .jumbotron-ar-2022 {
-                padding-top: 10px;
+              .jumbotron-ar-2023 {
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom:269px;
+                background-size: 90%;
+                background-position: 50% 213px;
               }
-              .jumbotron-ar-2022-artwork-mobile {
-                height: 200px;
-                width: 100%;
-                background-image: url();
-                display: block;
-                background-size: cover;
-                background-position: 40%;
-                background-repeat: no-repeat;
-              }
-              .jumbotron-ar-2022-artwork-desktop {
-                display: none;
+              .flex-hero{
+                display: flex; 
+                justify-content: center;
               }
             }
             @media (min-width: 992px) {
@@ -135,6 +133,7 @@
             .pdf-download {
               color: white;
               border: 1px solid white;
+              background-color: #1F3169;
               border-radius: 8px;
               padding: 9px 15px;
               text-decoration: none;
@@ -213,16 +212,17 @@
             }
           </style>
           
-          <div class="jumbotron-ar-2022">
-            <div class="container text-center">
-              <h4 class="text-white">Impact and Innovation Unit
+          <div class="jumbotron-ar-2023">
+            <div class="container flex-hero">
+              <div>
+              <h4 class="text-white mrgn-tp-0">Impact Canada
               </h4>
-              <h1 class="text-white">2022-23 Annual Report
+              <h1 class="text-white mrgn-tp-0">2022-23 Annual Report
               </h1>
-              <a class="pdf-download mrgn-bttm-lg text-white" href="/sites/default/files/2022-06/2022_impact_canada_annual_report.pdf" target="_blank"><i class="far fa-arrow-to-bottom mrgn-rght-sm text-white"></i> Download in PDF format (0 KB, 0 pages)</a>
+              <a class="pdf-download text-white" href="#!" target="_blank"><i class="far fa-arrow-to-bottom mrgn-rght-sm text-white"></i> Download in PDF format (0 KB, 0 pages)</a>
             </div>
-            <img alt="" class="img-responsive jumbotron-ar-2022-artwork-desktop" src="https://impact.canada.ca/sites/default/files/challenges_methane_0.png" style="width:30%;" />
-            <div class="jumbotron-ar-2022-artwork-mobile">&nbsp;
+            </div>
+            <img src="" class="img-responsive visible-xs-block" />
             </div>
           </div>
           <div class="container">
