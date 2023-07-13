@@ -110,6 +110,26 @@
               display: flex; 
               align-content: center;
             }
+
+            .banner-base {
+              background-color: #1F3169;
+              border-radius: 16px;
+            }
+            .banner-base-y-padding{
+              padding-top:30px;
+              padding-bottom:30px;
+            }
+            .bg-red{
+              background-color: #E25456;
+            }
+            .bg-blue{
+              background-color: #469EE1;
+            }
+            .bg-grey{
+              background-color: #bfdef0;
+            }
+            
+
             @media (max-width: 767px) {
               .jumbotron-ar-2023 {
                 text-align: center;
@@ -269,9 +289,12 @@
                 <section class="section-bookmark" id="section2">
                   <h1>2. Key Findings
                   </h1>
+                  <div class="banner-base mrgn-bttm-lg text-center">
+                    <img src="img/full-circle.png" style="width:300px;height:169px;max-width:100%;object-fit: cover;margin: auto;" alt="">
+                  </div>
                   <p><strong>The key findings of the 5-year comprehensive assessment are as follows:</strong>
                   </p>
-                  <ul>
+                  <ol>
                     <li style="padding-bottom: 0.5em;">Impact Canada represents a <strong>unique and effective approach</strong> to solving the increasingly complex policy issues of the 21st century run by an agile, high-performing team of dedicated individuals, with efficient and effective processes in place;</li>
                     <li style="padding-bottom: 0.5em;">Impact Canada is <strong>on track</strong> to meet its strategic objectives and is <strong>well placed to lead and support policy priorities</strong> through the use of advanced policy research, behavioural science, and Challenge-based methods as evidenced by its substantial positive impact on numerous critical policy spheres;</li>
                     <li style="padding-bottom: 0.5em;">Impact Canada's Challenge program continues to <strong>fill a gap in the Canadian innovation ecosystem</strong>, experiencing rapid growth from 2 challenge streams valued at $375M to 30 active or completed outcomes-based funding projects valued over $735M, spanning economic, environmental, and social policy domains;</li>
@@ -279,17 +302,20 @@
                     <li style="padding-bottom: 0.5em;">Feedback from departments via key informant interviews and surveys overwhelmingly emphasize the <strong>importance of Impact Canada's support, with high demand and satisfaction for Impact Canada's Centre of Expertise, Fellowship program, resources, and the Impact Canada portal;</strong></li>
                     <li style="padding-bottom: 0.5em;">Impact Canada is a <strong>positive story for government</strong>, demonstrating strong accountability, value for dollar, and concrete results for Canadians; and</li>
                     <li style="padding-bottom: 0.5em;">Impact Canada is an <strong>effective approach that should be scaled up</strong> more broadly across government.</li>
-                  </ul>
+                  </ol>
                 </section>
                 <!-- SECTION 3: ABOUT IMPACT CANADA -->
                 <section class="section-bookmark" id="section3">
                   <h1>3. About Impact Canada
                   </h1>
+                  <div class="banner-base mrgn-bttm-md bg-grey text-center">
+                    <img src="img/icon-parliament.png" style="width:169px;height:169px;max-width:120px;object-fit: contain;margin: auto;" alt="">
+                  </div>
                   <ul class="list-unstyled faq-details mrgn-bttm-xl">
                     <li>
                       <details>
                         <summary>
-                          <h3>Raison d’être
+                          <h3>Raison d'être
                           </h3>
                         </summary>
                         <p>Established in 2017, Impact Canada (Impact and Innovation Unit, Privy Council Office) uses novel public methods to address identified gaps in effectively translating policy objectives into meaningful and measurable outcomes for Canadians.
@@ -314,22 +340,31 @@
                         </summary>
                         <p><strong>We use rigorously designed and evidence-based methodologies that are continuously refined and adapted. </strong>
                         </p>
-                        <img alt="" class="media-small mrgn-tp-lg" src="https://impact.canada.ca/sites/default/files/eye-duotone.svg" />
-                        <h4>1. Identify/understand
-                        </h4>
-                        <p>Initial research to identify and define the specific problem that needs to be addressed or target outcomes of interest and key behaviours to target.
-                        </p>
-                        <img alt="" class="media-small mrgn-tp-lg" src="https://impact.canada.ca/sites/default/files/drafting-compass-duotone.svg" />
-                        <h4>2. Design/test
-                        </h4>
-                        <p>Developing and validating the design, or set of designs, and interventions with our partners.
-                        </p>
-                        <img alt="" class="media-small mrgn-tp-lg" src="https://impact.canada.ca/sites/default/files/layer-plus-duotone.svg" />
-                        <h4>3. Scale
-                        </h4>
-                        <p>Analysis, evaluation, and broad dissemination of results and solutions.
-                        </p>
-                        <p>For more information on our design processes, visit the Impact Canada <a href="/en/challenges" target="_blank">Challenges</a> and <a href="/en/behavioural-science" target="_Blank">Behavioural Science</a> web pages.
+                        <div class="row">
+                          <div class="col-sm-6 col-md-4">
+                            <img alt="" class="media-small mrgn-tp-lg" src="img/icon-identify.svg" />
+                            <h4>1. Identify/understand
+                            </h4>
+                            <p>Initial research to identify and define the specific problem that needs to be addressed or target outcomes of interest and key behaviours to target.
+                            </p>
+                          </div>
+                          <div class="col-sm-6 col-md-4">
+                              <img alt="" class="media-small mrgn-tp-lg" src="img/icon-design.svg" />
+                              <h4>2. Design/test
+                              </h4>
+                              <p>Developing and validating the design, or set of designs, and interventions with our partners.
+                              </p>
+                          </div>
+                          <div class="col-sm-6 col-md-4">
+                            <img alt="" class="media-small mrgn-tp-lg" src="img/icon-scale.svg" />
+                            <h4>3. Scale
+                            </h4>
+                            <p>Analysis, evaluation, and broad dissemination of results and solutions.
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <p class="small mrgn-tp-lg">For more information on our design processes, visit the Impact Canada <a href="/en/challenges" target="_blank">Challenges</a> and <a href="/en/behavioural-science" target="_Blank">Behavioural Science</a> web pages.
                         </p>
                       </details>
                     </li>
@@ -339,8 +374,9 @@
                 <section class="section-bookmark" id="section4">
                   <h1>4. Results from our 5-year Comprehensive Program Assessment
                   </h1>
-                  <h2>4.1 Impact Canada Challenges
+                  <h2 class="text-navy">4.1 Impact Canada Challenges
                   </h2>
+                  <img src="img/banner-challenge.jpg" class="banner-base img-responsive mrgn-bttm-lg" alt="">
                   <p>By more effectively deploying grants and contributions funding, shifting from paying for expenditures or activities to rewarding the achievement of outcomes, and by using a combination of financial and non-financial incentives, <strong>Impact Canada has been successful in encouraging participants to tackle well defined problems where solutions are not apparent or current responses are not achieving the desired results</strong>.
                   </p>
                   <ul class="list-unstyled faq-details mrgn-bttm-xl">
@@ -537,8 +573,10 @@
                       </details>
                     </li>
                   </ul>
-                  <h2>4.2 Impact Canada's Applied Behavioural Science Research Programs
+                  <h2 class="text-navy">4.2 Impact Canada's Applied Behavioural Science Research Programs
                   </h2>
+                  <img src="img/banner-besci.jpg" class="banner-base img-responsive mrgn-bttm-lg" alt="">
+
                   <p>Building on the foundation of the Centre of Expertise, Impact Canada designed and completed a significant portfolio of behavioural science (BeSci) projects and research to improve results across a number of priority areas. Applied to the work of government, Impact Canada behavioural scientists and practitioners are found to successfully leverage insights and methodologies from BeSci to inform the design and implementation of priority programs, services, and initiatives - understanding human behaviour and decision-making in a real-world context to support the implementation of government priorities.
                   </p>
                   <ul class="list-unstyled faq-details mrgn-bttm-xl">
@@ -685,7 +723,7 @@
                       </details>
                     </li>
                   </ul>
-                  <h2>4.3 Overall Conclusions
+                  <h2 class="text-navy">4.3 Overall Conclusions
                   </h2>
                   <p>The comprehensive evaluation concluded that Impact Canada is well placed to lead and support policy priorities through the use of advanced policy research, behavioural science, and Challenge-based funding models, and that it has successfully delivered on its strategic objectives to date. Further, the review concluded that there were no serious gaps in documented processes with respect to effectiveness and efficiency.
                   </p>
@@ -699,6 +737,9 @@
                 <section class="section-bookmark" id="section5">
                   <h1>5. Going Forward
                   </h1>
+                  <div class="banner-base banner-base-y-padding bg-red mrgn-bttm-lg">
+                    <img src="img/ar-2023-going-fwd.png" class="img-responsive" alt="">
+                  </div>
                   <p>Since launching in 2017, Impact Canada has remained focused on working with federal departments, other levels of government, and external partners to support the implementation of inventive programs and services designed to improve social, economic, and environmental outcomes for citizens.
                   </p>
                   <p><strong>Moving forward, Impact Canada will continue to: </strong>
